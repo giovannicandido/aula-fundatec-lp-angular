@@ -16,5 +16,5 @@ export class LivroComponent {
   image = ""
 
   @Input()
-  authors: string[] = []
+  authors: any[] = []
 }

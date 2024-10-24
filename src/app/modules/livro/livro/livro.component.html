@@ -8,7 +8,10 @@
             {{description}}
         </div>
         <div class="authors">
-            <p *ngFor="let author of authors" class="author">{{author}}</p>
+            <p *ngFor="let author of authors" class="author">
+                {{author.nome}} <br />
+                {{author.idade}}
+            </p>
         </div>
     </div>
 </div>

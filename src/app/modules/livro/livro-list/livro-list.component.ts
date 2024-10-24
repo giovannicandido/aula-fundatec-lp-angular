@@ -25,4 +25,13 @@ export class LivroListComponent {
             ]
         }
     ]
+
+    adicionar() {
+        this.livros.push({
+            titulo: "Novo livro",
+            description: "Description nova",
+            imagem: "https://http2.mlstatic.com/D_NQ_NP_2X_631895-MLB52238618958_112022-F.webp",
+            authors: []
+        })
+    }
 }
