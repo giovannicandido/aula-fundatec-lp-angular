@@ -1,15 +1,14 @@
 <div style="display: flex; min-width: 400px;">
-    <img flex="1" width="200px" height="300px" src="https://http2.mlstatic.com/D_NQ_NP_919146-MLU77228794012_072024-O.webp" />
+    <img flex="1" width="200px" height="300px" [src]="image" />
     <div flex="2" class="data">
         <div class="title">
-            A sementinha
+            {{title}}
         </div>
         <div class="description">
-            A sementinha
+            {{description}}
         </div>
         <div class="authors">
-            <p class="author">Nara Ragiotti</p>
-            <p class="author">Gabriela Gil</p>
+            <p *ngFor="let author of authors" class="author">{{author}}</p>
         </div>
     </div>
 </div>

@@ -1,7 +1,12 @@
 <h1>Livros disponíveis</h1>
 
 <div style="display: flex;">
-    <app-livro></app-livro>
-    <app-livro></app-livro>
-    <app-livro></app-livro>
+    <app-livro *ngFor="let livro of livros"
+        [title]="livro.titulo"
+        [description]="livro.description"
+        [image]="livro.imagem"
+        [authors]="livro.authors"
+        >
+
+    </app-livro>
 </div>

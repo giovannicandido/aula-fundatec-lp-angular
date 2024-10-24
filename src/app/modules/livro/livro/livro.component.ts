@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-livro',
@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './livro.component.css'
 })
 export class LivroComponent {
+  @Input()
+  title: string = ""
 
+  @Input()
+  description = ""
+  
+  @Input()
+  image = ""
+
+  @Input()
+  authors: string[] = []
 }
