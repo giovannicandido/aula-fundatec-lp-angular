@@ -4,6 +4,7 @@ import { LivroCommentsComponent } from "./livro-comments/livro-comments.componen
 import { LivrariaPageComponent } from "./pages/livraria-page.component";
 import { LivroComponent } from "./livro/livro.component";
 import { CommonModule } from "@angular/common";
+import { LivroService } from "./services/livro.service";
 
 @NgModule(
     {
@@ -14,7 +15,8 @@ import { CommonModule } from "@angular/common";
             LivrariaPageComponent,
             LivroComponent
         ],
-        exports: [LivrariaPageComponent]
+        exports: [LivrariaPageComponent],
+        providers: [LivroService]
     }
 )
 export class LivroModule {
