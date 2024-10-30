@@ -1,6 +1,4 @@
 <h1>Livros disponíveis</h1>
-
-<button (click)="adicionar()" >Adicionar Livro</button>
 <div style="display: flex;" style="max-width: 1000px;">
     <app-livro *ngFor="let livro of livros"
         [title]="livro.titulo"

@@ -1,3 +1,21 @@
 <h2>Bem vindo a livraria Fundatec</h2>
+<p>Adicione um livro</p>
+<form>
+    <div>
+        <label>Titulo</label>
+        <input [(ngModel)]="livro.titulo" name="titulo" />
+        <label>Description</label>
+        <input [(ngModel)]="livro.description" name="description"/>
+        <label>Imagem</label>
+        <input [(ngModel)]="livro.imagem" name="imagem"/>
+    
+    </div>
+    <div>
+       {{ livro | json }}
+    </div>
+    <div>
+        <button (click)="adicionar()" >Adicionar Livro</button>
+    </div>
+</form>
 <p>Veja nossa lista de livros</p>
 <app-livro-list></app-livro-list>

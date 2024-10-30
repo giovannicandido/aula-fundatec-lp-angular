@@ -5,10 +5,11 @@ import { LivrariaPageComponent } from "./pages/livraria-page.component";
 import { LivroComponent } from "./livro/livro.component";
 import { CommonModule } from "@angular/common";
 import { LivroService } from "./services/livro.service";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 
 @NgModule(
     {
-        imports: [CommonModule],
+        imports: [CommonModule, FormsModule],
         declarations: [
             LivroListComponent,
             LivroCommentsComponent,

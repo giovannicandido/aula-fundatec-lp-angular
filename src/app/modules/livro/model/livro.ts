@@ -4,3 +4,10 @@ export interface Livro {
     imagem: string,
     authors: string[]
 }
+
+export const EMPTY_LIVRO: Livro = {
+    titulo: "",
+    description: "",
+    imagem: "",
+    authors: []
+} 

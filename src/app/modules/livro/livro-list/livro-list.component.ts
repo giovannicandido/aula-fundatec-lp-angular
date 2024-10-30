@@ -18,13 +18,4 @@ export class LivroListComponent implements OnInit {
     ngOnInit(): void {
         this.livros = this.service.listarTodosPorLivraria("1")
     }
-
-    adicionar() {
-        this.service.adicionar({
-            titulo: "Novo livro",
-            description: "Description nova",
-            imagem: "https://http2.mlstatic.com/D_NQ_NP_2X_631895-MLB52238618958_112022-F.webp",
-            authors: []
-        })
-    }
 }
