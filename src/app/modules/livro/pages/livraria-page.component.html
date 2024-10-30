@@ -11,11 +11,8 @@
     
     </div>
     <div>
-       {{ livro | json }}
-    </div>
-    <div>
         <button (click)="adicionar()" >Adicionar Livro</button>
     </div>
 </form>
 <p>Veja nossa lista de livros</p>
-<app-livro-list></app-livro-list>
+<app-livro-list [livros]="livros"></app-livro-list>

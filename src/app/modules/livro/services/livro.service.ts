@@ -30,6 +30,6 @@ export class LivroService {
     }
 
     adicionar(livro: Livro) {
-        
+        this.livros.push(livro)
     }
 }
