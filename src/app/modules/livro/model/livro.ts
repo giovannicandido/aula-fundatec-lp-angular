@@ -1,4 +1,4 @@
-interface Livro {
+export interface Livro {
     titulo: string,
     description: string
     imagem: string,

@@ -1,4 +1,5 @@
 import { Injectable } from "@angular/core";
+import { Livro } from "../model/livro";
 
 @Injectable()
 export class LivroService {
